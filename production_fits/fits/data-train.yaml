@@ -1,0 +1,13 @@
+thermo:
+  source: ../thermo-datasets/binary-combined-training-small-v1-water-co-opt
+
+  
+  scales:
+    density: 50
+    hmix: 10
+
+  weight: 1.0
+
+dimer:
+  source: ../dimer-datasets/lj-filtered-no-charge-small-mol
+  weight: 5

@@ -1,0 +1,20 @@
+initial: ../input_ff/lj-small-mol-charge-filt.offxml
+
+parameters:
+  vdW:
+    cols:        [epsilon,              sigma]
+    scales:      {epsilon: 10.0,        sigma: 1.0}
+    limits: {epsilon: [0.0, null], sigma: [0.0, null]}
+    # exclude:
+    # - "[#1:1]-[#8X2H2+0]-[#1]"
+    
+  
+  Electrostatics:
+   cols: [charge, ]
+   scales: {charge: 1.0}
+   limts: {charge: [null, null]}
+   include:
+   - "[#1]-[#8X2H2+0:1]-[#1]"
+   
+
+attributes: {}
